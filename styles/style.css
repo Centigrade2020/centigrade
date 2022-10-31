@@ -1,0 +1,111 @@
+canvas {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  visibility: visible;
+}
+#particles-js {
+  height: 100vh;
+}
+
+body {
+  font-family: "Poppins";
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  margin: auto;
+  white-space: wrap;
+  padding: auto;
+}
+.title {
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size:x-large;
+  cursor: pointer;
+  width:fit-content ;
+  z-index: 99;
+}
+.title h1 {
+  background: -webkit-linear-gradient(225deg, #ff3cac, #784ba0, #2b86c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 150% 150%;
+  animation: move 3s ease-in-out infinite;
+  transition: 500ms;
+}
+.title h4 {
+  font-family: "poppins";
+  color: #784ba0;
+}
+.content {  
+  z-index: 99;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 4%;
+}
+
+a {
+  color: #784ba0;
+}
+i{
+  color: #784ba0;
+
+}
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 120%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(236, 236, 236, 1) 35%,
+      rgba(223, 223, 223, 1) 100%
+    );
+    background-size: 150% 150%;
+   animation: move 3s ease-in-out infinite;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(
+      135deg,
+      rgba(24, 23, 23, 1) 18%,
+      rgba(0, 0, 0, 1) 60%,
+      rgba(0, 12, 19, 1) 96%
+    );
+    background-size: 150% 150%;
+    animation: move 3s ease-in-out infinite;
+  }
+}
