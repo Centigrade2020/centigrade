@@ -1,5 +1,4 @@
 function myFunction() {
-
   document.getElementById("head-soc").classList.toggle("show");
 }
 var num = 0;
@@ -8,27 +7,26 @@ function res(a) {
   if (a == 'GitHub') {
     document.getElementById("para").innerHTML = "Check out our projects, they're cool ";
     document.getElementById("heading").innerHTML = "Our <br> Github page!!";
+    // window.open("https://github.com/Centigrade2020", "_blank");
     num++;
   }
-
   else if (a == 'email') {
     document.getElementById("para").innerHTML = "We'll get back soon";
     document.getElementById("heading").innerHTML = "E-mail <br> us !!";
+    // window.open("mailto:centigrade.ad@gmail.com?subject=[Enquiry]%20Development Services&cc=hrithikmj003@gmail.com;dharundds@gmail.com;dharunsivakumar002@gmail.com");
     num++;
   }
   else {
     document.getElementById("heading").innerHTML = "social <br> links!!";
     document.getElementById("para").innerHTML = "";
-
   }
 }
 function out() {
-  if (num>100){
-  document.getElementById("para").innerHTML = "Chumma irra chuthiya";
-
+  if (num > 100) {
+    document.getElementById("para").innerHTML = "Chumma irra";
   }
-  else{
-    document.getElementById("para").innerHTML = "We make cool websites , apps and more at an affordable price !!   ";
+  else {
+    document.getElementById("para").innerHTML = "We make cool websites , apps and more at an affordable price !!";
   }
   document.getElementById("heading").innerHTML = "Centigrade <br/> Labs!";
 }

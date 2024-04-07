@@ -3,20 +3,22 @@ canvas {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 0;
+  z-index: -999;
   visibility: visible;
+
 }
 #particles-js {
-  height: 100vh;
+  height: 80vh;
+  z-index: -999;
 }
 
 body {
   font-family: "Poppins";
-  overflow: hidden;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1%;
 }
 
 .body {
@@ -26,14 +28,14 @@ body {
   align-items:center;
   margin: auto;
   white-space: wrap;
-  padding: auto;
+  box-sizing: border-box;
 }
 .title {
   font-family: "Press Start 2P", cursive;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size:x-large;
+  font-size:2vw;
   cursor: pointer;
   width:fit-content ;
   z-index: 99;
@@ -60,13 +62,11 @@ ul {
   gap: 30px;
   padding: 4%;
 }
-
 a {
   color: #784ba0;
 }
 i{
   color: #784ba0;
-
 }
 @keyframes move {
   0% {
@@ -80,11 +80,13 @@ i{
   }
 }
 @media only screen and (max-width: 480px) {
+  .body{
+    margin-top: 100px;
+  }
   .title {
-    font-size: 120%;
+    font-size: 5vw;
   }
 }
-
 @media (prefers-color-scheme: light) {
   body {
     background: linear-gradient(
